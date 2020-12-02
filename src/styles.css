@@ -63,3 +63,42 @@ padding-left:20px;
   border-radius: 10%;
 }
 */
+
+.E-btn{
+  display: inline-block;
+  width: 235px;
+  text-align: center;
+  font-size: 26px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 26px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right,  #9999FF, #bf4fce);
+  transition: .5s;
+  background-size: 200%;
+}
+
+.E-btn:hover{
+  background-position: right center;
+}
+
+.container p{
+  padding-bottom: 55px;
+}
+
+.serihu{
+  font-size:20px;
+  font-weight:bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top:25px;
+}
+
+.by{
+  font-size:11px;
+  padding-top:12px;
+}
+
+.Login-btn {
+  float: right;
+}
