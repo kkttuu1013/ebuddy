@@ -15,7 +15,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="doen" ref={ref} {...props} />;
+  return <Slide direction="down" ref={ref} {...props} />;
 });
 
 export default function AlertDialogSlide(props) {
@@ -64,7 +64,6 @@ export default function AlertDialogSlide(props) {
     border: 'solid 2px #FFF',
     borderRadius: '10px',
     transition: '.2s',
-    textAlign:'right',
     "&:hover":{
       background: '#BA55D3',
       color: 'white',
@@ -85,7 +84,7 @@ export default function AlertDialogSlide(props) {
       <Button 
       className={classes.Button}
       onClick={handleClickOpen}>
-        ログイン
+        会員登録
       </Button>
     
       <Dialog
@@ -94,7 +93,7 @@ export default function AlertDialogSlide(props) {
         TransitionComponent={Transition}
       >
         <DialogTitle id="alert-dialog-slide-title">
-          ログインしてください
+          メールアドレスを記入
         </DialogTitle>
         <DialogContent>
         <TextInput
@@ -102,19 +101,13 @@ export default function AlertDialogSlide(props) {
               value={email} type={"text"} onChange={inputEmail}
               placeholder={"E-mailを入力してください"}
               />
-
-            <TextInput
-              label={"Password"} multiline={false} rows={1}
-              value={password} type={"text"} onChange={inputPassWord}
-              placeholder={"passwordを入力してください"}
-              />
         </DialogContent>
         <DialogActions>
           <Button 
           onClick={handleClose} 
           color="primary"
           variant="contained" >
-            ログイン
+            送信
           </Button>
 
           <Button 

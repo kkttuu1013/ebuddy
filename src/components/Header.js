@@ -3,11 +3,9 @@ import { makeStyles, withStyles,createStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import Ebutton from './Ebutton';
-import LoginButton from './LoginButton'
-
-
-
+import FormFormat from './FormFormat';
+import LoginButton from './LoginButton';
+import SignUpButton from './SignUpButton';
 
 const StyledTabs = withStyles({
   indicator: {
@@ -40,6 +38,7 @@ const StyledTab = withStyles((theme) => ({
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    position: 'fixd'
   },
   padding: {
     padding: theme.spacing(1),
@@ -72,8 +71,18 @@ export default function CustomizedTabs() {
           <StyledTab label="ホーム" />
           <StyledTab label="プレイ" />
           <StyledTab label="コミュニティ" />
-        </StyledTabs>
+          <div className="LoginButton">
+          <LoginButton  />
+          </div>
+          <div className="sign-up">
+          <SignUpButton  />
+          </div>
         <Typography className={classes.padding} />
+        </StyledTabs>
+      
+
+
+        
       </div>
     </div>
   );
