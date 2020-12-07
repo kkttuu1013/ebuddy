@@ -18,7 +18,7 @@ const Main = () =>{
     <p className="serihu">
       オイラは戦うために作られた.....文字通りね
       <p className="by">
-        -leagu og Legends.ザック
+        -leagu og Legends.ザック1
       </p>
     </p>
   
