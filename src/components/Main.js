@@ -8,7 +8,7 @@ const Main = () =>{
   return(
  
 <div className='top-wrapper'>
-<div className='container'>
+ <div className='container'>
   <h1>最高のゲーム<span className="taiken">体験</span>はここにある</h1>
   <p>E-Buddyはゲーマーのために作られたソーシャルプラットフォームです。世界中のプレイヤーとともに戦おう</p>
 　　<FormFormat 
@@ -18,14 +18,13 @@ const Main = () =>{
     <p className="serihu">
       オイラは戦うために作られた.....文字通りね
       <p className="by">
-        -leagu og Legends.ザック1
+        -leagu og Legends.ザック
       </p>
-    </p>
-  
+      </p>
   </div>
-  
-    </div>
-    </div>
+ </div>
+</div>
+
   );
 }
 

@@ -4,14 +4,14 @@ import Header from './components/Header'
 import './styles.css';
 
 
+
 export default class Ebudy extends React.Component {
   render(){
 
   return (
     <div>
      <Header />
-     <Main />
-          
+     <Main />   
     </div>
   );
   }
